@@ -1,12 +1,16 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFO</title>
+    <title>INFORMATORIO</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 </head>
 <body>
-    <h1>MENU</h1>
+    <h1 class="titulo">MENU</h1>
+    <img src="{% static 'img/logo.png' %}" width="150px">
     <ul>
         <li><a href="{% url 'inicio' %}">Home</a></li>
         <li><a href="{% url 'contacto' %}">Contacto</a></li>
